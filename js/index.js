@@ -1,9 +1,7 @@
-$(".menu>li").mouseover(function(){
-    $("#back").show();
-    $(".submenu").stop().slideDown();
+$(`.menu > li`).mouseover(function() {
+    $(this).children(`.submenu`).stop().slideDown();
 });
 
-$(".menu>li").mouseleave(function(){
-    $("#back").hide();
-    $(".submenu").stop().slideUp();
+$(`.menu > li`).mouseleave(function() {
+    $(this).children(`.submenu`).stop().slideUp();
 });
